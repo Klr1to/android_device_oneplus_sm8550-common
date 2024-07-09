@@ -110,9 +110,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.frameworks.stats-V1-ndk.vendor \
     android.hardware.camera.common@1.0.vendor \
+    android.hardware.camera.common-V1-ndk.vendor \
     android.hardware.camera.device-V1-ndk.vendor \
     android.hardware.camera.metadata-V1-ndk.vendor \
     android.hardware.camera.provider-V1-ndk.vendor \
+    android.frameworks.cameraservice.common-V1-ndk.vendor \
+    android.frameworks.cameraservice.service-V1-ndk.vendor \
     libcamera_metadata.vendor \
     libexif.vendor \
     libutilscallstack.vendor \
@@ -156,6 +159,8 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
     vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.capabilityconfigstore@1.0 \
+    vendor.qti.hardware.capabilityconfigstore@1.0.vendor \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.config-V1-ndk.vendor \
     vendor.qti.hardware.display.config-V2-ndk.vendor \
