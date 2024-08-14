@@ -143,6 +143,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# Deskclock
+PRODUCT_PACKAGES += \
+    DeskClock
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator-V1-ndk.vendor \
@@ -389,6 +393,12 @@ PRODUCT_PACKAGES += \
 # QTI service tracker
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
+
+# QTI components
+TARGET_COMMON_QTI_COMPONENTS += \
+    alarm
+
+include $(QCOM_COMMON_PATH)/components.mk
 
 # RIL
 PRODUCT_PACKAGES += \
