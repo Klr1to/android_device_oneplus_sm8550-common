@@ -315,6 +315,8 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
 PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor \
     libpalclient
@@ -398,8 +400,7 @@ PRODUCT_PACKAGES += \
 
 # QTI components
 TARGET_COMMON_QTI_COMPONENTS += \
-    alarm \
-    av
+    alarm
 
 include $(QCOM_COMMON_PATH)/components.mk
 
