@@ -126,11 +126,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image
 
 TARGET_KERNEL_SOURCE := kernel/oneplus/sm8550
-TARGET_KERNEL_CONFIG := \
-    gki_defconfig \
-    vendor/kalama_GKI.config \
-    vendor/oplus/kalama_GKI.config \
-    vendor/debugfs.config
+TARGET_KERNEL_CONFIG := nethunter_defconfig
 
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/oneplus/sm8550-modules
 TARGET_KERNEL_EXT_MODULES := \
